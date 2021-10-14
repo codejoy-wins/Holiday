@@ -1,6 +1,74 @@
 *{
     font-family: 'Montserrat', sans-serif;
 }
+html, body{
+    margin: 0 auto;
+    padding: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+.right{
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+#silence{
+    position: fixed;
+    right: 60px;
+}
 #rapper{
     margin: 0 auto;
+    height: 100%;
+    background-image: radial-gradient(rgba(255, 166, 0, 0.705),rgba(47, 223, 47, 0.623), rgba(255, 217, 0, 0.911));
+}
+.inner{
+    padding: 2vw;
+}
+
+#header{
+    background-color: gray;
+    height: .1vw;
+}
+
+#footer{
+    background-color: black;
+    color: whitesmoke;
+    padding: .05vw;
+    border-radius: .1vw;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+nav{
+    display: flex;
+}
+nav div{
+    padding: .5vw;
+    padding-right: 2vw;
+}
+nav div:hover{
+    text-transform: capitalize;
+    color: whitesmoke;
+    background-color: coral;
+    cursor: pointer;
+}
+#footer{
+    cursor: none;
+}
+.letter:hover{
+    color: rgba(83, 240, 36, 0.856);
+    cursor: none;
+}
+.tiny{
+    max-height: 25px;
+}
+
+@media only screen and (max-device-width: 1366px) {
+    #rapper{
+        background-image: radial-gradient(circle,rgba(255, 166, 0, 0.705),rgba(47, 223, 47, 0.623), rgba(255, 217, 0, 0.911));
+    }
+    nav div{
+        padding: 2vw;
+    }
 }
